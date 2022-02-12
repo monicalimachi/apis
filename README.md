@@ -24,5 +24,7 @@ FASTAPI docs:
 DATABASES with Docker
 - Install postgres: port:15432:5432, add user, password, db, port
 - Install pgAdmin: port:16543:80, email, anypass
-
+```bash
+    http://localhost:16543/
+```
 CONNECT postgres DB with fastApi: install psycopg2 in the venv
