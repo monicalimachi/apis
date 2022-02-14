@@ -1,16 +1,22 @@
-
 from distutils.log import error
 from logging import exception
+from pydoc import ModuleScanner
 from typing import Optional
-from fastapi import FastAPI, Response, status, HTTPException
+from fastapi import Depends, FastAPI, Response, status, HTTPException
 from fastapi.params import Body
 from pydantic import BaseModel
 from random import randrange
 import psycopg2
 from psycopg2.extras import RealDictCursor
 import time
+from sqlalchemy.orm import Session
+from . import models
+from .database import engine, get_db
 
-app=FastAPI()
+models.Base.metadata.create_all(bind=engine)
+
+app = FastAPI()
+
 
 class Post(BaseModel):
     title: str
@@ -43,10 +49,17 @@ def find_index_post(id):
         if p['id']== id:
             return i
 
+
 #Decorator to reference to the path and the HTTP method GET "/" the root path
 @app.get("/")
 def root():
     return {"message": "Hello World"}
+
+
+#For testing purposes
+@app.get("/sqlalchemy")
+def test_posts(db:Session = Depends(get_db)):
+    return{"status": "Success"}
 
 @app.get("/posts")
 def get_posts():

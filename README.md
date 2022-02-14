@@ -28,3 +28,13 @@ DATABASES with Docker
     http://localhost:16543/
 ```
 CONNECT postgres DB with fastApi: install psycopg2 in the venv
+
+Use ```pip freeze``` tu verify all the apps installed in your env
+
+Install and configure SQLAlchemy ORM to access postgresDB from FastAPI
+```bash
+    pip install SQLAlchemy
+```
+```bash 
+    https://fastapi.tiangolo.com/tutorial/sql-databases/
+```
