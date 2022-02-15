@@ -38,3 +38,11 @@ Install and configure SQLAlchemy ORM to access postgresDB from FastAPI
 ```bash 
     https://fastapi.tiangolo.com/tutorial/sql-databases/
 ```
+Review or install email validator
+```bash
+    pip install email-validator
+```
+Install two libraries for password:
+```bash
+pip install passlib[bcrypt]
+```
