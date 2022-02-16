@@ -44,5 +44,11 @@ Review or install email validator
 ```
 Install two libraries for password:
 ```bash
-pip install passlib[bcrypt]
+    pip install passlib[bcrypt]
 ```
+Install OAUTH2 tool for login JWT tokens in Python
+```bash
+    pip install python-jose[cryptography]
+```
+Info and Examples: https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt/
+
