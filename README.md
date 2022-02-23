@@ -11,7 +11,7 @@ All requirements with version included to install are located in requirements.tx
 ```bash
     http://127.0.0.1:8000/posts
 ```
--Run python venv
+- Run python venv
 ```bash
     source /../activate
 ```
@@ -75,3 +75,7 @@ some helpful commands:
 
 CORS - Cross Origin Resource Sharing allows to make request from a web browser on one domain to a server on a different domain
 Link  for more info: https://fastapi.tiangolo.com/tutorial/cors/?h=cors#more-info
+
+
+## Deploy to Heroku
+https://devcenter.heroku.com/articles/getting-started-with-python
