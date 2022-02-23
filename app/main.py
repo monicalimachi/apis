@@ -30,5 +30,5 @@ app.include_router(vote.router)
 #Decorator to reference to the path and the HTTP method GET "/" the root path
 @app.get("/")
 def root():
-    return {"message": "Hello World"}
+    return {"message": "Hello World !!!! v2"}
 

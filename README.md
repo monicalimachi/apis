@@ -26,8 +26,8 @@ FASTAPI docs:
 - http://127.0.0.1:8000/docs
 
 DATABASES with Docker
-- Install postgres: port:15432:5432, add user, password, db, port
-- Install pgAdmin: port:16543:80, email, anypass
+- Install postgres Example: port:15432:5432, add user, password, db, port
+- Install pgAdmin Example: port:16543:80, email, anypass
 ```bash
     http://localhost:16543/
 ```
