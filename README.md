@@ -79,3 +79,22 @@ Link  for more info: https://fastapi.tiangolo.com/tutorial/cors/?h=cors#more-inf
 
 ## Deploy to Heroku
 https://devcenter.heroku.com/articles/getting-started-with-python
+
+Heroku tips
+Create Procfile to start app
+To restart app
+```bash
+heroku ps:restart
+```
+To create a DB on postgresql free-tier
+```bash
+heroku addons:create heroku-postgresql:hobby-dev
+```
+To update DB using alembic
+```bash
+    heroku run "alembic upgrade [somevalue]"
+```
+To review logs
+```bash
+heroku logs -t
+```
