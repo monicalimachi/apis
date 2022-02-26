@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, status
 from fastapi.middleware.cors import CORSMiddleware
 
 from . import models
@@ -28,7 +28,7 @@ app.include_router(auth.router)
 app.include_router(vote.router)
 
 #Decorator to reference to the path and the HTTP method GET "/" the root path
-@app.get("/")
+@app.get("/",status_code=status.HTTP_200_OK)
 def root():
-    return {"message": "Hello World !!!! v2"}
+    return {"message": "Hello World"}
 

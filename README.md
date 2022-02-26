@@ -98,3 +98,14 @@ To review logs
 ```bash
 heroku logs -t
 ```
+## For testing purposes you can add Pytest to test the api
+```bash
+    pip install pytest
+```
+- Commands to use:
+```bash
+    pytest
+    pytest folder/test_file
+    pytest --disable-warnings -v
+    pytest --disable-warnings -v -x
+```
