@@ -1,0 +1,22 @@
+name: Build and deploy Code
+# on: [push, pull_request] Run on all branches when push all pull request
+on: 
+  push: 
+    branches: 
+      - "main"
+      - "test"
+      - "feature_branch"]
+  pull_request:
+    branches:
+      - "test_branch"
+      - "main"
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: pulling git repo
+        uses: actions/checkout@v3
+      - name: say hi to monica
+        run: echo "hello monica"
+  
