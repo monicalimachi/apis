@@ -43,3 +43,6 @@ def client(session):
             session.close()
     app.dependency_overrides[get_db] = override_get_db
     yield TestClient(app)
+
+
+#All import information was added to coftest.py, by default pytest use that path file to reuse in all testcases
