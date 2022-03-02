@@ -3,9 +3,9 @@ name: Build and deploy Code
 on: 
   push: 
     branches: 
-      - "main"
-      - "test"
-      - "feature_branch"]
+      - 'main'
+      - 'test'
+      - 'feature_branch'
   pull_request:
     branches:
       - "test_branch"
