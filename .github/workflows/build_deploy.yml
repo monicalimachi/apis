@@ -17,6 +17,15 @@ jobs:
     steps:
       - name: pulling git repo
         uses: actions/checkout@v3
-      - name: say hi to monica
-        run: echo "hello monica"
+      - name: start the action
+        run: echo "hello this is initialized"
+      - name: Install python version 3.9
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9' 
+          architecture: 'x64'
+      - name: pdate pip
+        run: python -m pip install --upgrade pip
+      - name: install all dependencies
+        run: pip install -r requirements.txt
   
