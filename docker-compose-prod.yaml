@@ -1,7 +1,7 @@
 version: "3"
 services:
-  api:
-    image: monikabril/apis_api
+  fastapi:
+    image: monikabril/fastapi
     restart: always
     ports: 
       - "80:8000"  
