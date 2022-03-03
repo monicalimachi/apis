@@ -79,7 +79,7 @@ jobs:
       
 
   deploy: 
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     needs: [build]
     environment:
       name: pre-production
