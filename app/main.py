@@ -30,5 +30,5 @@ app.include_router(vote.router)
 #Decorator to reference to the path and the HTTP method GET "/" the root path
 @app.get("/",status_code=status.HTTP_200_OK)
 def root():
-    return {"message": "Hello World, seccessfully deployed the CI/CD to pre production"}
+    return {"message": "Hello World, successfully deployed the CI/CD to production"}
 
