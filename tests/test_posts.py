@@ -13,7 +13,7 @@ def test_get_all_posts(authorized_client, test_posts):
     posts_list = (list(posts_map))
     
     assert len(res.json()) == len(test_posts)
-    assert res.status_code == 201 #changed this one to 200 only used for github actions
+    assert res.status_code == 200
     #assert posts_list[0].Post.id == test_posts[0].id
 
 def test_unauthorized_user_get_all_posts(client, test_posts):
