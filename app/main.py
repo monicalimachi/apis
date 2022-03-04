@@ -30,5 +30,5 @@ app.include_router(vote.router)
 #Decorator to reference to the path and the HTTP method GET "/" the root path
 @app.get("/",status_code=status.HTTP_200_OK)
 def root():
-    return {"message": "Hello World!!! retry ubuntu v2"}
+    return {"message": "Hello World!!! Updating GIT"}
 
