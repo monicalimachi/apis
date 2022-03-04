@@ -109,3 +109,10 @@ heroku logs -t
     pytest --disable-warnings -v
     pytest --disable-warnings -v -x
 ```
+
+## Some github actions repositories
+```bash
+    - SHH Remote commands
+    - Deploy to Heroku
+    - https://docs.docker.com/ci-cd/github-actions/ 
+```
